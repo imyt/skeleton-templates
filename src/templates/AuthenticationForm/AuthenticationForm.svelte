@@ -4,7 +4,7 @@
 </script>
 
 <div class="card p-6 space-y-6 shadow-xl">
-	<p class="font-semibold">Welcome to Mantine, login with</p>
+	<p class="font-semibold">Welcome, login with</p>
 	<div class="flex flex-wrap space-y-4 space-x-0 md:flex-nowrap md:space-x-4 md:space-y-0">
 		<GoogleButton class="btn variant-ringed-surface w-full">Google</GoogleButton>
 		<FacebookButton class="btn variant-ringed-surface w-full">Facebook</FacebookButton>
