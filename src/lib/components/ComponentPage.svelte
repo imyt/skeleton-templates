@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SEO_TITLE } from '$lib/constants'
 	import { storePreviewCode } from '$lib/stores'
 
 	// import { CodeBlock } from '@skeletonlabs/skeleton'
@@ -22,7 +23,7 @@
 </script>
 
 <svelte:head>
-	<title>{`${props.attributes.title} | Mantine UI`}</title>
+	<title>{`${props.attributes.title} | ${SEO_TITLE}`}</title>
 </svelte:head>
 <div class="h-screen">
 	<div class="card p-3 fixed bottom-0 left-0 right-0 z-[1]">

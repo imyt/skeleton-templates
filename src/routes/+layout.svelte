@@ -17,6 +17,7 @@
 	import Header from '$lib/components/Layout/Header.svelte'
 	import { page } from '$app/stores'
 	import type { LayoutServerData } from './$types'
+	import Seo from '$lib/components/SEO.svelte'
 
 	export let data: LayoutServerData
 	$: ({ currentTheme } = data)
@@ -30,6 +31,7 @@
 	{:else}
 		{@html githubDark}
 	{/if}
+	<Seo />
 </svelte:head>
 
 <Toast position="br" max={1} buttonDismiss="hidden" padding="p-2" />

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SEO_TITLE } from '$lib/constants'
 	import ComponentCanvas from '../ComponentCanvas/ComponentCanvas.svelte'
 	import CategoryHeader from './CategoryHeader.svelte'
 
@@ -10,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>{`${data.category?.name} | Mantine UI`}</title>
+	<title>{`${data.category?.name} | ${SEO_TITLE}`}</title>
 </svelte:head>
 
 <div class="container max-w-7xl mx-auto p-4 space-y-8">
