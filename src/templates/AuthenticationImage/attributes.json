@@ -1,0 +1,11 @@
+{
+  "title": "Authentication page with image",
+  "category": "authentication",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": false
+  }
+}

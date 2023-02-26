@@ -1,0 +1,13 @@
+{
+    "title": "Authentication Form",
+    "category": "authentication",
+    "author": "imyt",
+    "dependencies": [
+        "/core/action-icon/",
+        "@tabler/icons"
+    ],
+    "canvas": {
+        "center": true,
+        "maxWidth": "md"
+    }
+}

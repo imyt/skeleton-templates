@@ -1,0 +1,12 @@
+{
+  "title": "Forgot Password",
+  "category": "authentication",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true,
+    "maxWidth": "md"
+  }
+}
