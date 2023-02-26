@@ -26,12 +26,14 @@
 	</header>
 
 	{#if state === 'preview'}
-		<ComponentPreview
-			canvas={props.attributes.canvas}
-			withSpacing={!!props.attributes.canvas.maxWidth}
-		>
-			<svelte:component this={DynamicComponent} />
-		</ComponentPreview>
+		<div class="bg-surface-200-700-token">
+			<ComponentPreview
+				canvas={props.attributes.canvas}
+				withSpacing={!!props.attributes.canvas.maxWidth}
+			>
+				<svelte:component this={DynamicComponent} {...props.attributes.props} />
+			</ComponentPreview>
+		</div>
 	{:else}
 		<CanvasCode code={props.code} title={props.attributes.title} />
 	{/if}

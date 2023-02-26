@@ -5,8 +5,10 @@
 
 <div
 	class={`${canvas?.maxWidth && withSpacing ? 'py-10' : 'py-0'}
+	${!canvas?.maxWidth && canvas.center ? '!p-10' : 'p-0'}
     ${canvas?.center ? 'mx-auto' : ''}
-	${canvas?.maxWidth ? `max-w-md` : 'w-full'}
+	${canvas?.maxWidth ? `max-w-md ` : 'w-full'}
+		
 	`}
 >
 	<slot />
