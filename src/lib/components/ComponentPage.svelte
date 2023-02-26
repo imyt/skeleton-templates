@@ -17,7 +17,7 @@
 
 	onMount(async () => {
 		DynamicComponent = (
-			await import(`../../components/${props.component}/${props.component}.svelte`)
+			await import(`../../templates/${props.component}/${props.component}.svelte`)
 		).default
 	})
 </script>
