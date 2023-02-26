@@ -1,0 +1,12 @@
+{
+  "title": "Social buttons",
+  "category": "buttons",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true,
+    "maxWidth": "md"
+  }
+}
