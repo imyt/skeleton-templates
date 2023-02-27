@@ -6,7 +6,6 @@
   "responsive": true,
   "dependencies": [],
   "canvas": {
-    "center": true,
-    "maxWidth": "md"
+    "center": true
   }
 }
