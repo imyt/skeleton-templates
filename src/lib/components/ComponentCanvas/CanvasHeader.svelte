@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { RadioItem, RadioGroup, LightSwitch } from '@skeletonlabs/skeleton'
+	import { RadioItem, RadioGroup } from '@skeletonlabs/skeleton'
 	import IconEye from 'virtual:icons/tabler/eye'
 	import IconCode from 'virtual:icons/tabler/code'
 	import IconExternalLink from 'virtual:icons/tabler/external-link'
@@ -39,7 +39,6 @@
 
 	<div class="flex items-center space-x-3">
 		{#if isExternalPage}
-			<LightSwitch width="w-12" height="h-6" />
 			<ThemeMenu />
 		{/if}
 
