@@ -31,7 +31,7 @@
 				canvas={props.attributes.canvas}
 				withSpacing={!!props.attributes.canvas.maxWidth}
 			>
-				<svelte:component this={DynamicComponent} {...props.attributes.props} />
+				<svelte:component this={DynamicComponent} />
 			</ComponentPreview>
 		</div>
 	{:else}

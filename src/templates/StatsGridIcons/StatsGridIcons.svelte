@@ -2,11 +2,27 @@
 	import IconArrowUpRight from 'virtual:icons/tabler/arrow-up-right'
 	import IconArrowDownRight from 'virtual:icons/tabler/arrow-down-right'
 
-	export let data: { title: string; value: string; diff: number }[]
+	const mockdata = [
+		{
+			title: 'Revenue',
+			value: '$13,456',
+			diff: 34
+		},
+		{
+			title: 'Profit',
+			value: '$4,145',
+			diff: -13
+		},
+		{
+			title: 'Coupons usage',
+			value: '745',
+			diff: 18
+		}
+	]
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-	{#each data as stat}
+	{#each mockdata as stat}
 		<div class="card p-6 space-y-1">
 			<div class="flex justify-between items-center">
 				<div>

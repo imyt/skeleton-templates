@@ -5,25 +5,6 @@
   "withColor": true,
   "responsive": true,
   "dependencies": [],
-  "props": {
-    "data": [
-      {
-        "title": "Revenue",
-        "value": "$13,456",
-        "diff": 34
-      },
-      {
-        "title": "Profit",
-        "value": "$4,145",
-        "diff": -13
-      },
-      {
-        "title": "Coupons usage",
-        "value": "745",
-        "diff": 18
-      }
-    ]
-  },
   "canvas": {
     "center": true
   }

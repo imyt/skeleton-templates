@@ -6,11 +6,36 @@
 	import IconArrowUpRight from 'virtual:icons/tabler/arrow-up-right'
 	import IconArrowDownRight from 'virtual:icons/tabler/arrow-down-right'
 
-	export let data: { title: string; icon: string; value: string; diff: number }[]
+	const mockdata = [
+		{
+			title: 'Revenue',
+			icon: 'receipt',
+			value: '13,456',
+			diff: 34
+		},
+		{
+			title: 'Profit',
+			icon: 'coin',
+			value: '4,145',
+			diff: -13
+		},
+		{
+			title: 'Coupons usage',
+			icon: 'discount',
+			value: '745',
+			diff: 18
+		},
+		{
+			title: 'New customers',
+			icon: 'user',
+			value: '188',
+			diff: -30
+		}
+	]
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-	{#each data as stat}
+	{#each mockdata as stat}
 		<div class="card p-6 space-y-1">
 			<div class="flex justify-between opacity-50 items-center">
 				<div class="font-bold text-xs">{stat.title.toUpperCase()}</div>

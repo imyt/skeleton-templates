@@ -3,45 +3,36 @@
 	import IconArrowDownRight from 'virtual:icons/tabler/arrow-down-right'
 	import { ProgressRadial } from '@skeletonlabs/skeleton'
 
-	export let data: {
-		label: string
-		stats: string
-		progress: number
-		color: string
-		icon: 'up' | 'down'
-	}[]
-
-	const getColorClass = (color: string) => {
-		let colorClass!: string
-
-		switch (color) {
-			case 'teal':
-				colorClass = 'stroke-primary-500'
-				break
-			case 'blue':
-				colorClass = 'stroke-tertiary-500'
-				break
-			case 'red':
-				colorClass = 'stroke-error-500'
-
-			default:
-				break
+	const mockdata = [
+		{
+			label: 'Page views',
+			stats: '456,578',
+			progress: 65,
+			color: 'stroke-primary-500',
+			icon: 'up'
+		},
+		{
+			label: 'New users',
+			stats: '2,550',
+			progress: 72,
+			color: 'stroke-tertiary-500',
+			icon: 'up'
+		},
+		{
+			label: 'Orders',
+			stats: '4,735',
+			progress: 52,
+			color: 'stroke-error-500',
+			icon: 'down'
 		}
-
-		return colorClass
-	}
+	]
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-	{#each data as stat}
+	{#each mockdata as stat}
 		<div class="card p-6 space-y-1">
 			<div class="flex space-x-5">
-				<ProgressRadial
-					value={stat.progress}
-					stroke={125}
-					class="h-16 w-16"
-					meter={getColorClass(stat.color)}
-				>
+				<ProgressRadial value={stat.progress} stroke={125} class="h-16 w-16" meter={stat.color}>
 					{#if stat.icon === 'up'}
 						<IconArrowUpRight />
 					{:else}
