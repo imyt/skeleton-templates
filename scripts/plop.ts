@@ -16,7 +16,14 @@ if (fs.existsSync(componentPath)) {
 	process.exit(1)
 }
 
-const component = ``
+const component = `
+<script lang="ts">
+</script>
+<div class="card p-6">
+	<div class="text-xs opacity-50">MONTHLY GOAL</div>
+	<div class="mb-4 text-2xl">$7.49 / $10.00</div>
+</div>
+`
 
 const attributes = `{
   "title": "",
