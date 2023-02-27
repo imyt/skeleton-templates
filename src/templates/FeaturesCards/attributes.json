@@ -1,0 +1,11 @@
+{
+  "title": "Features with cards",
+  "category": "features",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true
+  }
+}
