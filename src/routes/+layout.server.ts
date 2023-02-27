@@ -1,5 +1,7 @@
 import type { LayoutServerLoad } from './$types'
 // import { VERCEL_ENV } from '$env/static/private';
+export const prerender = true
+export const ssr = false
 
 export const load: LayoutServerLoad = async ({ cookies }) => {
 	let theme = cookies.get('theme')
