@@ -1,4 +1,5 @@
-import type { Actions } from './$types'
+import { countComponentsByCategory, getAllComponents } from '$lib/data/components'
+import type { Actions, PageServerLoad } from './$types'
 
 export const actions: Actions = {
 	// This action is called when the user clicks the theme button
@@ -10,3 +11,10 @@ export const actions: Actions = {
 		return { theme }
 	}
 }
+
+export const load = (async ({ params }) => {
+	return {
+		componentsCountByCategory: countComponentsByCategory(),
+		allComponents: getAllComponents()
+	}
+}) satisfies PageServerLoad

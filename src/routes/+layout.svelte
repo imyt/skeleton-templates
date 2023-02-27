@@ -38,7 +38,7 @@
 
 {#if noHeader}
 	<Header />
-	<div class="pt-16">
+	<div class="pt-16 md:pt-20">
 		<slot />
 	</div>
 {:else}
