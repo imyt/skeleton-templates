@@ -7,6 +7,12 @@
 
 	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
 	import '../app.postcss'
+
+	// Enable Vercel Analytics
+	import { dev } from '$app/environment'
+	import { inject } from '@vercel/analytics'
+	inject({ mode: dev ? 'development' : 'production' })
+
 	import { storePopup, modeCurrent, Toast } from '@skeletonlabs/skeleton'
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom'
 
