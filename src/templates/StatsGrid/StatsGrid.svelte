@@ -9,7 +9,7 @@
 	export let data: { title: string; icon: string; value: string; diff: number }[]
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 	{#each data as stat}
 		<div class="card p-6 space-y-1">
 			<div class="flex justify-between opacity-50 items-center">
