@@ -1,6 +1,7 @@
 import { getCategoryData } from '$lib/data/categories'
 import { getAllComponents, getComponentsByCategory } from '$lib/data/components'
-import type { PageLoad } from './$types'
+import type { PageServerLoad } from './$types'
+export const prerender = 'auto'
 
 export const load = (async ({ params }) => {
 	return {
@@ -8,4 +9,4 @@ export const load = (async ({ params }) => {
 		components: getComponentsByCategory()[params.category],
 		allComponents: getAllComponents()
 	}
-}) satisfies PageLoad
+}) satisfies PageServerLoad

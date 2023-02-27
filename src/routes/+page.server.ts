@@ -1,7 +1,6 @@
 import { countComponentsByCategory, getAllComponents } from '$lib/data/components'
 import type { Actions, PageServerLoad } from './$types'
-export const prerender = true
-export const ssr = false
+export const prerender = false
 
 export const actions: Actions = {
 	// This action is called when the user clicks the theme button
