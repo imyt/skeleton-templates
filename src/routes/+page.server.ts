@@ -14,8 +14,11 @@ export const actions: Actions = {
 }
 
 export const load = (async ({ params }) => {
+	// return {
+	// 	componentsCountByCategory: countComponentsByCategory(),
+	// 	allComponents: getAllComponents()
+	// }
 	return {
-		componentsCountByCategory: countComponentsByCategory(),
-		allComponents: getAllComponents()
+		componentsCountByCategory: { authentication: 4 }
 	}
 }) satisfies PageServerLoad
