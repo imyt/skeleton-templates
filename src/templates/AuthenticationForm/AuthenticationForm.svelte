@@ -1,13 +1,15 @@
 <script>
-	import FacebookButton from '../SocialButtons/FacebookButton.svelte'
-	import GoogleButton from '../SocialButtons/GoogleButton.svelte'
+	import IconBrandGoogle from 'virtual:icons/logos/google-icon'
+	import IconBrandFacebook from 'virtual:icons/logos/facebook'
 </script>
 
 <div class="card p-6 space-y-6 shadow-xl">
 	<p class="font-semibold">Welcome, login with</p>
 	<div class="flex flex-wrap space-y-4 space-x-0 md:flex-nowrap md:space-x-4 md:space-y-0">
-		<GoogleButton class="btn variant-ringed-surface w-full">Google</GoogleButton>
-		<FacebookButton class="btn variant-ringed-surface w-full">Facebook</FacebookButton>
+		<button class="btn variant-filled-surface w-full gap-2"><IconBrandGoogle />Google</button>
+		<button class="btn text-white w-full gap-2" style="background-color: #4267B2;"
+			><IconBrandFacebook />Facebook</button
+		>
 	</div>
 	<div class="text-center">
 		<hr class="-mb-4" />
