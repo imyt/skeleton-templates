@@ -78,7 +78,7 @@ export const Primary: Story = {
 
 fs.mkdirSync(componentPath)
 fs.writeFileSync(path.join(componentPath, `${name}.svelte`), component)
-fs.writeFileSync(path.join(componentPath, `${name}.stories.ts`), story)
+// fs.writeFileSync(path.join(componentPath, `${name}.stories.ts`), story)
 fs.writeFileSync(path.join(componentPath, 'attributes.json'), attributes)
 
 process.stdout.write(chalk.cyan`Component ${name} created\n`)
