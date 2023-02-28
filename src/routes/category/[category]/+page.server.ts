@@ -1,5 +1,5 @@
 import { getCategoryData } from '$lib/data/categories'
-import { getAllComponents, getComponentsByCategory } from '$lib/data/components'
+import { getAllComponents, getComponentsByCategory } from '$lib/data'
 import type { PageServerLoad } from './$types'
 export const prerender = 'auto'
 

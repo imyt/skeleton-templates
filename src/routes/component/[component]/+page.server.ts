@@ -1,4 +1,4 @@
-import { getAllComponents } from '$lib/data/components'
+import { getAllComponents } from '$lib/data'
 import type { PageServerLoad } from './$types'
 export const prerender = 'auto'
 

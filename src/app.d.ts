@@ -29,8 +29,6 @@ declare global {
 			dependencies: string[]
 			title: string
 			props?: Record<string, unknown>
-			maxWidth?: string
-			center: boolean
 			changelog?: string
 		}
 

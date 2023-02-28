@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "npm run components && vite build",
     "preview": "vite preview",
     "test": "playwright test",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -14,7 +14,8 @@
     "format": "prettier --plugin-search-dir . --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "plop": "esno scripts/plop"
+    "plop": "esno scripts/plop",
+    "components": "esno scripts/build-component-index && prettier --write \"src/lib/data/components.ts\""
   },
   "devDependencies": {
     "@floating-ui/dom": "1.2.1",

@@ -1,4 +1,4 @@
-import { countComponentsByCategory, getAllComponents } from '$lib/data/components'
+import { countComponentsByCategory, getAllComponents } from '$lib/data'
 import type { Actions, PageServerLoad } from './$types'
 export const prerender = false
 
@@ -14,11 +14,8 @@ export const actions: Actions = {
 }
 
 export const load = (async ({ params }) => {
-	// return {
-	// 	componentsCountByCategory: countComponentsByCategory(),
-	// 	allComponents: getAllComponents()
-	// }
 	return {
-		componentsCountByCategory: { authentication: 4 }
+		componentsCountByCategory: countComponentsByCategory(),
+		allComponents: getAllComponents()
 	}
 }) satisfies PageServerLoad
