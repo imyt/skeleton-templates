@@ -4,6 +4,6 @@
 	export let component: ConstructorOfATypedSvelteComponent
 </script>
 
-<ComponentPreview canvas={attributes} withSpacing>
+<ComponentPreview canvas={attributes.canvas} withSpacing>
 	<svelte:component this={component} />
 </ComponentPreview>
