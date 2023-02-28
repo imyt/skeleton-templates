@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && npm run components",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "playwright test",
+    "postinstall": "npm run check && npm run components",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "test:unit": "vitest",
