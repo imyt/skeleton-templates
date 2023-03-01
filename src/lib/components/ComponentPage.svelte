@@ -31,14 +31,16 @@
 	</div>
 	<!-- <ComponentPreviewControls {props} /> -->
 
-	{#if state === 'preview'}
-		<ComponentPreview
-			canvas={props.attributes.canvas}
-			withSpacing={!!props.attributes.canvas.maxWidth}
-		>
-			<svelte:component this={DynamicComponent} />
-		</ComponentPreview>
-	{:else}
-		<CanvasCode code={props.code} title={props.attributes.title} />
-	{/if}
+	<div class="pb-8 md:pb-0.5">
+		{#if state === 'preview'}
+			<ComponentPreview
+				canvas={props.attributes.canvas}
+				withSpacing={!!props.attributes.canvas.maxWidth}
+			>
+				<svelte:component this={DynamicComponent} />
+			</ComponentPreview>
+		{:else}
+			<CanvasCode code={props.code} title={props.attributes.title} />
+		{/if}
+	</div>
 </div>

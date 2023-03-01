@@ -8,7 +8,7 @@
 	${!canvas?.maxWidth && canvas.center ? '!p-10' : 'p-0'}
     ${canvas?.center ? 'mx-auto' : ''}
 	${canvas?.maxWidth ? `max-w-md ` : 'w-full'}
-		
+	mb-20
 	`}
 >
 	<slot />
