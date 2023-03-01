@@ -98,7 +98,7 @@ const components: App.UiComponent[] = [
 	{
 		component: 'FeaturesTitle',
 		slug: 'features-title',
-		code: '<script lang="ts">\n\timport IconGauge from \'virtual:icons/tabler/gauge\'\n\timport IconUser from \'virtual:icons/tabler/user\'\n\timport IconCookie from \'virtual:icons/tabler/cookie\'\n\timport IconLock from \'virtual:icons/tabler/lock\'\n\timport IconMessage2 from \'virtual:icons/tabler/message-2\'\n\tconst mockdata = [\n\t\t{\n\t\t\ttitle: \'Extreme performance\',\n\t\t\tdescription:\n\t\t\t\t\'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit\',\n\t\t\ticon: IconGauge\n\t\t},\n\t\t{\n\t\t\ttitle: \'Privacy focused\',\n\t\t\tdescription:\n\t\t\t\t\'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma\',\n\t\t\ticon: IconUser\n\t\t},\n\t\t{\n\t\t\ttitle: \'No third parties\',\n\t\t\tdescription:\n\t\t\t\t\'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves\',\n\t\t\ticon: IconCookie\n\t\t},\n\t\t{\n\t\t\ticon: IconLock,\n\t\t\ttitle: \'Secure by default\',\n\t\t\tdescription:\n\t\t\t\t\'Although it still can’t fly, its jumping power is outstanding, in Alola the mushrooms on Paras don’t grow up quite right\'\n\t\t}\n\t]\n</script>\n\n<div class="container mx-auto max-w-screen-lg">\n\t<div class="grid grid-cols-12">\n\t\t<div class="space-y-4 col-span-4 p-4">\n\t\t\t<h2 class="">Integrate effortlessly with any technology stack</h2>\n\t\t\t<p class="max-w-xl opacity-60 mx-auto">\n\t\t\t\tEvery once in a while, you’ll see a Golbat that’s missing some fangs. This happens when\n\t\t\t\thunger drives it to try biting a Steel-type Pokémon.\n\t\t\t</p>\n\t\t\t<button class="btn btn-lg variant-filled-tertiary">Get Started</button>\n\t\t</div>\n\t\t<div class="grid grid-cols-1 md:grid-cols-2 gap-4 col-span-8">\n\t\t\t{#each mockdata as feature}\n\t\t\t\t<div class="p-4 space-y-2">\n\t\t\t\t\t<div class="variant-filled-tertiary text-2xl p-2 w-fit rounded-token">\n\t\t\t\t\t\t<svelte:component this={feature.icon} class="" />\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class="font-semibold">\n\t\t\t\t\t\t{feature.title}\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="text-sm opacity-60">\n\t\t\t\t\t\t{feature.description}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t{/each}\n\t\t</div>\n\t</div>\n</div>\n',
+		code: '<script lang="ts">\n\timport IconGauge from \'virtual:icons/tabler/gauge\'\n\timport IconUser from \'virtual:icons/tabler/user\'\n\timport IconCookie from \'virtual:icons/tabler/cookie\'\n\timport IconLock from \'virtual:icons/tabler/lock\'\n\timport IconMessage2 from \'virtual:icons/tabler/message-2\'\n\tconst mockdata = [\n\t\t{\n\t\t\ttitle: \'Extreme performance\',\n\t\t\tdescription:\n\t\t\t\t\'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit\',\n\t\t\ticon: IconGauge\n\t\t},\n\t\t{\n\t\t\ttitle: \'Privacy focused\',\n\t\t\tdescription:\n\t\t\t\t\'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma\',\n\t\t\ticon: IconUser\n\t\t},\n\t\t{\n\t\t\ttitle: \'No third parties\',\n\t\t\tdescription:\n\t\t\t\t\'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves\',\n\t\t\ticon: IconCookie\n\t\t},\n\t\t{\n\t\t\ticon: IconLock,\n\t\t\ttitle: \'Secure by default\',\n\t\t\tdescription:\n\t\t\t\t\'Although it still can’t fly, its jumping power is outstanding, in Alola the mushrooms on Paras don’t grow up quite right\'\n\t\t}\n\t]\n</script>\n\n<div class="container mx-auto max-w-screen-lg">\n\t<div class="grid grid-cols-1 md:grid-cols-12">\n\t\t<div class="space-y-4 md:col-span-4 p-4">\n\t\t\t<h2 class="">Integrate effortlessly with any technology stack</h2>\n\t\t\t<p class="max-w-xl opacity-60 mx-auto">\n\t\t\t\tEvery once in a while, you’ll see a Golbat that’s missing some fangs. This happens when\n\t\t\t\thunger drives it to try biting a Steel-type Pokémon.\n\t\t\t</p>\n\t\t\t<button class="btn md:btn-lg variant-filled-tertiary">Get Started</button>\n\t\t</div>\n\t\t<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:col-span-8">\n\t\t\t{#each mockdata as feature}\n\t\t\t\t<div class="p-4 space-y-2">\n\t\t\t\t\t<div class="variant-filled-tertiary text-2xl p-2 w-fit rounded-token">\n\t\t\t\t\t\t<svelte:component this={feature.icon} class="" />\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class="font-semibold">\n\t\t\t\t\t\t{feature.title}\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="text-sm opacity-60">\n\t\t\t\t\t\t{feature.description}\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t{/each}\n\t\t</div>\n\t</div>\n</div>\n',
 		attributes: {
 			title: 'Features with title',
 			category: 'features',
@@ -121,6 +121,48 @@ const components: App.UiComponent[] = [
 			responsive: true,
 			dependencies: [],
 			canvas: { center: true, maxWidth: 'md' }
+		}
+	},
+	{
+		component: 'HeroBullets',
+		slug: 'hero-bullets',
+		code: '<script lang="ts">\n\timport IconCheck from \'virtual:icons/tabler/check\'\n\timport image from \'./image.png\'\n</script>\n\n<div class="container mx-auto max-w-screen-lg">\n\t<div class="grid grid-cols-1 md:grid-cols-12">\n\t\t<div class="space-y-4 md:col-span-6 p-4">\n\t\t\t<h1>\n\t\t\t\tA <span class="relative px-3 py-1 bg-surface-300-600-token">modern</span> Svelte components library\n\t\t\t</h1>\n\t\t\t<p class="max-w-xl opacity-60">\n\t\t\t\tEvery once in a while, you’ll see a Golbat that’s missing some fangs. This happens when\n\t\t\t\thunger drives it to try biting a Steel-type Pokémon.\n\t\t\t</p>\n\t\t\t<ul class="list-items">\n\t\t\t\t<li>\n\t\t\t\t\t<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>\n\t\t\t\t\t<span>\n\t\t\t\t\t\t<b>TypeScript based</b> – build type safe applications, all components and hooks export types\n\t\t\t\t\t</span>\n\t\t\t\t</li>\n\t\t\t\t<li>\n\t\t\t\t\t<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>\n\t\t\t\t\t<span>\n\t\t\t\t\t\t<b>Free and open source</b> – all packages have MIT license, you can use Mantine in any project\n\t\t\t\t\t</span>\n\t\t\t\t</li>\n\t\t\t\t<li>\n\t\t\t\t\t<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>\n\t\t\t\t\t<span>\n\t\t\t\t\t\t<b>No annoying focus ring</b> – focus ring will appear only when user navigates with keyboard\n\t\t\t\t\t</span>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t<div class="flex flex-wrap gap-4">\n\t\t\t\t<button class="btn md:btn-lg  w-full md:w-fit variant-filled-primary">Get Started</button>\n\t\t\t\t<button class="btn md:btn-lg  w-full md:w-fit variant-filled-surface">Source Code</button>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<img src={image} alt="" class="hidden md:block md:col-span-6" />\n\t</div>\n</div>\n\n<style>\n\t.list-items li {\n\t\tdisplay: flex;\n\t\tgap: 16px;\n\t\tpadding: 12px 0px;\n\t}\n</style>\n',
+		attributes: {
+			title: 'Hero with bullets',
+			category: 'hero',
+			author: 'imyt',
+			withColor: true,
+			responsive: true,
+			dependencies: [],
+			canvas: { center: true }
+		}
+	},
+	{
+		component: 'HeroImageBackground',
+		slug: 'hero-image-background',
+		code: '<script lang="ts">\n</script>\n\n<div class="wrapper relative bg-cover bg-center">\n\t<div class="container mx-auto text-left p-4 md:text-center">\n\t\t<div class="absolute opacity-60 bg-black z-[1] inset-0" />\n\t\t<div class="relative z-[1] space-y-6 pt-32 pb-24 text-white">\n\t\t\t<h2 class="unstyled font-bold text-4xl tracking-tight">\n\t\t\t\tAutomated AI code reviews for <span class="text-tertiary-500">any stack</span>\n\t\t\t</h2>\n\t\t\t<p class="max-w-lg md:mx-auto">\n\t\t\t\tBuild more reliable software with AI companion. AI is also trained to detect lazy developers\n\t\t\t\twho do nothing and just complain on Twitter.\n\t\t\t</p>\n\t\t\t<div class="flex flex-wrap gap-3 md:space-x-3 md:block">\n\t\t\t\t<button class="btn md:btn-lg w-full md:w-fit variant-filled-tertiary">Get Started</button>\n\t\t\t\t<button class="btn md:btn-lg w-full md:w-fit variant-glass-surface">Live Demo</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<style>\n\t.wrapper {\n\t\tbackground-image: url(https://images.unsplash.com/photo-1573164713988-8665fc963095?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=980&q=80);\n\t}\n</style>\n',
+		attributes: {
+			title: 'Hero with background image',
+			category: 'hero',
+			author: 'imyt',
+			withColor: true,
+			responsive: true,
+			dependencies: [],
+			canvas: { center: true }
+		}
+	},
+	{
+		component: 'HeroText',
+		slug: 'hero-text',
+		code: '<script lang="ts">\n</script>\n\n<div class="container mx-auto text-left p-4 md:text-center">\n\t<div class="relative z-[1] space-y-6 pt-32 pb-24">\n\t\t<h2 class="unstyled font-bold text-4xl tracking-tight">\n\t\t\tAutomated AI <span class="text-tertiary-500">code reviews</span> for any stack\n\t\t</h2>\n\t\t<p class="max-w-lg opacity-70 md:mx-auto">\n\t\t\tBuild more reliable software with AI companion. AI is also trained to detect lazy developers\n\t\t\twho do nothing and just complain on Twitter.\n\t\t</p>\n\t\t<div class="flex flex-wrap gap-3 md:space-x-3 md:block">\n\t\t\t<button class="btn md:btn-lg w-full md:w-fit variant-ringed-surface">Book a demo</button>\n\t\t\t<button class="btn md:btn-lg w-full md:w-fit variant-filled-tertiary"\n\t\t\t\t>Purchase a license</button\n\t\t\t>\n\t\t</div>\n\t</div>\n</div>\n',
+		attributes: {
+			title: 'Hero section with text',
+			category: 'hero',
+			author: 'imyt',
+			withColor: true,
+			responsive: true,
+			dependencies: [],
+			canvas: { center: true }
 		}
 	},
 	{

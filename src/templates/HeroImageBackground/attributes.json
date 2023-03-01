@@ -1,0 +1,11 @@
+{
+  "title": "Hero with background image",
+  "category": "hero",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true
+  }
+}

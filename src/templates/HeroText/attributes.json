@@ -1,0 +1,11 @@
+{
+  "title": "Hero section with text",
+  "category": "hero",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true
+  }
+}
