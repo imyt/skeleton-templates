@@ -21,7 +21,7 @@
 	{#each groups as group}
 		<div class="space-y-4">
 			<div class="flex items-baseline gap-2">
-				<h3>{group.name}</h3>
+				<h2>{group.name}</h2>
 				<span class="opacity-60 text-sm">{totalComponents(group)} components</span>
 			</div>
 

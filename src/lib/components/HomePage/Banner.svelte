@@ -23,13 +23,13 @@
 			href="https://svelte.dev"
 			target="_blank"
 			rel="noreferrer"
-			class="btn variant-filled-surface w-full md:w-fit">Get started with Svelte</a
+			class="btn variant-ringed-surface w-full md:w-fit">Get started with Svelte</a
 		>
 		<a
 			href="https://skeleton.dev"
 			target="_blank"
 			rel="noreferrer"
-			class="btn variant-filled-surface w-full md:w-fit">Explore Skeleton UI</a
+			class="btn variant-ringed-surface w-full md:w-fit">Explore Skeleton UI</a
 		>
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl pt-16">
@@ -55,7 +55,7 @@
 		min-height: 700px;
 		width: 800px;
 		background-size: auto 100%;
-		background-image: url(https://raw.githubusercontent.com/mantinedev/ui.mantine.dev/master/src/components/HomePage/Banner/banner.webp);
+		background-image: url(./banner.webp);
 	}
 	.hero {
 		min-height: 700px;
