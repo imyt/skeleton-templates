@@ -24,7 +24,9 @@
 						class="btn btn-sm p-0"
 						href={`/component/${props.slug}`}
 						target="_blank"
-						rel="noreferrer"><IconExternalLink /></a
+						aria-label={`View ${props.attributes.title} component in isolation`}
+						rel="noreferrer"
+						><IconExternalLink alt={`View ${props.attributes.title} component in isolation`} /></a
 					>
 				{/if}
 
