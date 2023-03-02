@@ -6,8 +6,9 @@
 <div class="container mx-auto max-w-screen-lg">
 	<div class="grid grid-cols-1 md:grid-cols-12">
 		<div class="space-y-4 md:col-span-6 p-4">
-			<h1>
-				A <span class="relative px-3 py-1 bg-surface-300-600-token">modern</span> Svelte components library
+			<h1 class="text-3xl md:text-5xl font-bold">
+				A <span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token">modern</span> Svelte components
+				library
 			</h1>
 			<p class="max-w-xl opacity-60">
 				Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when
@@ -15,19 +16,34 @@
 			</p>
 			<ul class="list-items">
 				<li>
-					<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>
+					<span
+						><IconCheck
+							alt="bullet point"
+							class="variant-filled-primary rounded-token p-0.5"
+						/></span
+					>
 					<span>
 						<b>TypeScript based</b> – build type safe applications, all components and hooks export types
 					</span>
 				</li>
 				<li>
-					<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>
+					<span
+						><IconCheck
+							alt="bullet point"
+							class="variant-filled-primary rounded-token p-0.5"
+						/></span
+					>
 					<span>
 						<b>Free and open source</b> – all packages have MIT license, you can use Mantine in any project
 					</span>
 				</li>
 				<li>
-					<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>
+					<span
+						><IconCheck
+							alt="bullet point"
+							class="variant-filled-primary rounded-token p-0.5"
+						/></span
+					>
 					<span>
 						<b>No annoying focus ring</b> – focus ring will appear only when user navigates with keyboard
 					</span>
@@ -39,7 +55,7 @@
 			</div>
 		</div>
 
-		<img src={image} alt="" class="hidden md:block md:col-span-6" />
+		<img src={image} alt="design components" class="hidden md:block md:col-span-6" />
 	</div>
 </div>
 

@@ -6,7 +6,7 @@
 <div class="card p-6 space-y-6 shadow-xl">
 	<p class="font-semibold">Welcome, login with</p>
 	<div class="flex flex-wrap space-y-4 space-x-0 md:flex-nowrap md:space-x-4 md:space-y-0">
-		<button class="btn variant-filled-surface w-full gap-2"><IconBrandGoogle />Google</button>
+		<button class="btn variant-ringed-surface w-full gap-2"><IconBrandGoogle />Google</button>
 		<button class="btn text-white w-full gap-2" style="background-color: #4267B2;"
 			><IconBrandFacebook />Facebook</button
 		>

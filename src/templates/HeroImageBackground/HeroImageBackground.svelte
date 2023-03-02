@@ -5,9 +5,9 @@
 	<div class="container mx-auto text-left p-4 md:text-center">
 		<div class="absolute opacity-60 bg-black z-[1] inset-0" />
 		<div class="relative z-[1] space-y-6 pt-32 pb-24 text-white">
-			<h2 class="unstyled font-bold text-4xl tracking-tight">
+			<div class="font-bold text-4xl tracking-tight">
 				Automated AI code reviews for <span class="text-tertiary-500">any stack</span>
-			</h2>
+			</div>
 			<p class="max-w-lg md:mx-auto">
 				Build more reliable software with AI companion. AI is also trained to detect lazy developers
 				who do nothing and just complain on Twitter.

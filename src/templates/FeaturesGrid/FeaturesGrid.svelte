@@ -40,7 +40,9 @@
 
 <div class="container mx-auto max-w-screen-lg">
 	<div class="text-center space-y-4">
-		<h2 class="">Integrate effortlessly with any technology stack</h2>
+		<div class="text-xl md:text-3xl font-bold">
+			Integrate effortlessly with any technology stack
+		</div>
 		<p class="max-w-xl opacity-60 mx-auto">
 			Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when hunger
 			drives it to try biting a Steel-type Pokémon.

@@ -27,7 +27,9 @@
 <div class="container mx-auto max-w-screen-lg">
 	<div class="text-center space-y-4">
 		<span class="badge variant-filled-primary uppercase">Best Company Ever</span>
-		<h2 class="">Integrate effortlessly with any technology stack</h2>
+		<div class="text-xl md:text-3xl font-bold">
+			Integrate effortlessly with any technology stack
+		</div>
 		<p
 			class="max-w-xl opacity-60 mx-auto after:mx-auto after:mt-3 after:bg-primary-500 after:w-12 after:h-0.5 after:block"
 		>

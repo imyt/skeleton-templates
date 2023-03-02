@@ -1,6 +1,6 @@
 <div class="wrapper">
 	<div class="card space-y-6 p-6 pt-20 rounded-none max-w-full md:max-w-md form">
-		<h3 class="text-center mb-12">Welcome back!</h3>
+		<div class="text-center mb-12 text-3xl font-bold">Welcome back!</div>
 		<form class="space-y-4">
 			<label class="label">
 				<span>Email</span>

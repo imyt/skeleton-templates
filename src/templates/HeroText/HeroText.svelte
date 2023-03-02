@@ -3,9 +3,9 @@
 
 <div class="container mx-auto text-left p-4 md:text-center">
 	<div class="relative z-[1] space-y-6 pt-32 pb-24">
-		<h2 class="unstyled font-bold text-4xl tracking-tight">
+		<div class="font-bold text-4xl tracking-tight">
 			Automated AI <span class="text-tertiary-500">code reviews</span> for any stack
-		</h2>
+		</div>
 		<p class="max-w-lg opacity-70 md:mx-auto">
 			Build more reliable software with AI companion. AI is also trained to detect lazy developers
 			who do nothing and just complain on Twitter.

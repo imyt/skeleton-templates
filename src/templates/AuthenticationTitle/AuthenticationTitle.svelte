@@ -1,5 +1,5 @@
 <header class="text-center py-4">
-	<h2 class="mb-2">Welcome back!</h2>
+	<div class="text-center mb-2 text-3xl font-bold">Welcome back!</div>
 	<p class="unstyled text-sm md:text-base opacity-50">
 		Don't have an account yet? <a href="/">Create account</a>
 	</p>
