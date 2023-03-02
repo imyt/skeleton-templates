@@ -34,6 +34,6 @@ export const SEO_TITLE = 'Skeleton Templates'
 export const SEO_DESCRIPTION =
 	'A growing open-source collection of hand-crafted Skeleton UI templates ready to drop into your SvelteKit project.'
 export const SEO_KEYWORDS =
-	'skeleton ui, ui templates, web templates, web design, svelte templates, svelte ui templates, skeleton ui templates, skeleton templates, sveltekit templates, sveltekit ui templates'
+	'skeleton ui, web templates, svelte templates, svelte ui templates, skeleton ui templates, skeleton templates, sveltekit templates, sveltekit ui templates, free, open source'
 export const SEO_OG_IMAGE = 'https://skeleton-templates.dev/favicon.png'
 export const SEO_TWITTER_IMAGE = 'https://skeleton-templates.dev/favicon.png'
