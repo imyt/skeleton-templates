@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "playwright test",
-    "postinstall": "npm run check && npm run components",
+    "postinstall": "npm run check && npm run build-component-index",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "test:unit": "vitest",
@@ -17,10 +17,11 @@
     "format": "prettier --plugin-search-dir . --write .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "plop": "esno scripts/plop",
-    "components": "esno scripts/build-component-index && prettier --write \"src/lib/data/components.ts\""
+    "create-component": "esno scripts/create-component",
+    "build-component-index": "esno scripts/build-component-index"
   },
   "devDependencies": {
+    "@clack/prompts": "0.6.3",
     "@floating-ui/dom": "1.2.1",
     "@iconify/json": "2.2.27",
     "@playwright/test": "1.31.1",

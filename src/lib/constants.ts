@@ -1,4 +1,3 @@
-export const TEMPLATE_DIR = 'src/templates'
 export const PRODUCTION_URL = 'https://skeleton-templates.dev'
 
 /**

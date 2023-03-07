@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import prettier from 'prettier'
 
 interface CanvasAttributes {
 	responsive?: boolean
@@ -55,11 +56,22 @@ export function getAllComponents(): UiComponent[] {
 		.filter((c) => c) as UiComponent[]
 }
 
-const dataPath = path.join(path.resolve(), './src/lib/data')
-// fs.mkdirSync(dataPath)
+export function buildComponentIndex() {
+	const dataPath = path.join(path.resolve(), './src/lib/data')
 
-const fileContent = `
-const components: App.UiComponent[] = ${JSON.stringify(getAllComponents())}
-export default components
-`
-fs.writeFileSync(path.join(dataPath, `components.ts`), fileContent)
+	let fileContent = `
+	const components: App.UiComponent[] = ${JSON.stringify(getAllComponents())}
+	export default components
+	`
+	fileContent = prettier.format(fileContent, {
+		semi: false,
+		singleQuote: true,
+		trailingComma: 'none',
+		useTabs: true,
+		printWidth: 100,
+		parser: 'typescript'
+	})
+	fs.writeFileSync(path.join(dataPath, `components.ts`), fileContent)
+}
+
+buildComponentIndex()
