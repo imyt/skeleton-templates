@@ -47,8 +47,11 @@ async function main() {
 	const name = await text({
 		message: 'What is the component name? (use TitleCase. e.g., AuthenticationForm)',
 		placeholder: 'NewComponent',
-		initialValue: 'NewComponent',
+		// initialValue: 'NewComponent',
 		validate(value) {
+			if (value.length === 0) {
+				return 'Component name can not be blank'
+			}
 			if (fs.existsSync(getComponentPath(value))) {
 				return `${value} component already exists`
 			}
