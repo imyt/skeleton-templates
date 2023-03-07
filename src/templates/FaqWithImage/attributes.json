@@ -1,0 +1,11 @@
+{
+  "title": "FAQs with image",
+  "category": "faq",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true
+  }
+}
