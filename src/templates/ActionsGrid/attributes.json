@@ -1,0 +1,12 @@
+{
+  "title": "Card with actions grid",
+  "category": "app-cards",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true,
+    "maxWidth": "md"
+  }
+}
