@@ -8,6 +8,6 @@
     ],
     "canvas": {
         "center": true,
-        "maxWidth": "md"
+        "maxWidth": "max-w-md"
     }
 }

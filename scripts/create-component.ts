@@ -25,7 +25,7 @@ const getAttributesJson = (title: string, category: string, author: string) => `
     "dependencies": [],
     "canvas": {
       "center": true,
-      "maxWidth": "md"
+      "maxWidth": "max-w-md"
     }
   }
   `

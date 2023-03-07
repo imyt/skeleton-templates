@@ -1,12 +1,12 @@
 {
-  "title": "Card with icon features",
-  "category": "app-cards",
+  "title": "FAQ simple",
+  "category": "faq",
   "author": "imyt",
   "withColor": true,
   "responsive": true,
   "dependencies": [],
   "canvas": {
     "center": true,
-    "maxWidth": "max-w-md"
+    "maxWidth": "max-w-xl"
   }
 }

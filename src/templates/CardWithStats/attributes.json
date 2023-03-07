@@ -7,6 +7,6 @@
   "dependencies": [],
   "canvas": {
     "center": true,
-    "maxWidth": "sm"
+    "maxWidth": "max-w-sm"
   }
 }
