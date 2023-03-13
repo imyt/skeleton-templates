@@ -3,8 +3,8 @@
 	import features from './features'
 </script>
 
-<div class="image hidden lg:flex bg-no-repeat bg-right absolute top-0 bottom-0 right-0" />
-<div class="container max-w-7xl mx-auto space-y-4 pt-36 hero">
+<!-- <div class="image hidden lg:flex bg-no-repeat bg-right absolute top-0 bottom-0 right-0" /> -->
+<div class="container max-w-7xl mx-auto space-y-4 pt-36 pb-10 hero">
 	<div class="text-small uppercase font-semibold">Skeleton UI Templates</div>
 	<h1 class="!leading-tight">
 		<span class="text-primary-500 dark:invert">{componentsCount} responsive components</span>
@@ -49,15 +49,3 @@
 		{/each}
 	</div>
 </div>
-
-<style>
-	.image {
-		min-height: 700px;
-		width: 800px;
-		background-size: auto 100%;
-		background-image: url(./banner.webp);
-	}
-	.hero {
-		min-height: 700px;
-	}
-</style>
