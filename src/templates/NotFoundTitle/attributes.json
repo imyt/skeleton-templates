@@ -1,0 +1,12 @@
+{
+  "title": "404 page",
+  "category": "error-pages",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true,
+    "maxWidth": "max-w-xl"
+  }
+}
