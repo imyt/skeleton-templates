@@ -3,7 +3,7 @@
 	import {
 		clipboard,
 		popup,
-		toastStore,
+		getToastStore,
 		type PopupSettings,
 		type ToastSettings
 	} from '@skeletonlabs/skeleton'
@@ -28,7 +28,7 @@
 			// Optional: Set a callback method
 			// callback: (response) => console.log(response)
 		}
-		toastStore.trigger(t)
+		getToastStore().trigger(t)
 	}
 </script>
 

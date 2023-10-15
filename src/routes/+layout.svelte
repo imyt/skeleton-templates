@@ -1,10 +1,4 @@
 <script lang="ts">
-	// Your selected Skeleton theme:
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
-
-	// This contains the bulk of Skeletons required styles:
-	import '@skeletonlabs/skeleton/styles/all.css'
-
 	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
 	import '../app.postcss'
 
@@ -13,7 +7,8 @@
 	import { inject } from '@vercel/analytics'
 	inject({ mode: dev ? 'development' : 'production' })
 
-	import { storePopup, modeCurrent, Toast } from '@skeletonlabs/skeleton'
+	import { storePopup, modeCurrent, Toast, initializeStores } from '@skeletonlabs/skeleton'
+	initializeStores()
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom'
 
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow })
@@ -25,13 +20,13 @@
 	import type { LayoutServerData } from './$types'
 	import Seo from '$lib/components/SEO.svelte'
 
-	export let data: LayoutServerData
-	$: ({ currentTheme } = data)
+	// export let data: LayoutServerData
+	// $: ({ currentTheme } = data)
 	const noHeader = $page.route.id === '/component/[component]' ? false : true
 </script>
 
 <svelte:head>
-	{@html `\<style\>${currentTheme}}\</style\>`}
+	<!-- {@html `\<style\>${currentTheme}}\</style\>`} -->
 	{#if $modeCurrent}
 		{@html github}
 	{:else}
