@@ -3,7 +3,10 @@
 	import IconEye from 'virtual:icons/tabler/eye'
 	import IconCode from 'virtual:icons/tabler/code'
 	import IconExternalLink from 'virtual:icons/tabler/external-link'
-	import { storePreviewCode } from '$lib/stores'
+	import IconDeviceMobile from 'virtual:icons/tabler/device-mobile'
+	import IconDeviceTablet from 'virtual:icons/tabler/device-tablet'
+	import IconDeviceDesktop from 'virtual:icons/tabler/device-desktop'
+	import { storePreviewCode, storeViewport } from '$lib/stores'
 	import { page } from '$app/stores'
 	import ThemeMenu from '../Layout/ThemeMenu.svelte'
 	export let props: App.UiComponent
@@ -11,6 +14,11 @@
 	if (!$storePreviewCode[props.slug]) {
 		$storePreviewCode[props.slug] = 'preview'
 	}
+
+	if (!$storeViewport[props.slug]) {
+		$storeViewport[props.slug] = 'desktop'
+	}
+
 	const isExternalPage = $page.route.id === '/component/[component]' ? true : false
 </script>
 
@@ -43,10 +51,22 @@
 			</div>
 		</div>
 
-		<div class="inline-flex flex-wrap justify-center gap-2 md:gap-4">
+		<div class="inline-flex justify-center gap-2 md:gap-4">
 			{#if isExternalPage}
 				<ThemeMenu />
 			{/if}
+
+			<RadioGroup padding="px-3 py-1 pt-2" class="hidden md:inline-flex">
+				<RadioItem bind:group={$storeViewport[props.slug]} name="tab-mobile" value="mobile"
+					><IconDeviceMobile /></RadioItem
+				>
+				<RadioItem bind:group={$storeViewport[props.slug]} name="tab-tablet" value="tablet"
+					><IconDeviceTablet /></RadioItem
+				>
+				<RadioItem bind:group={$storeViewport[props.slug]} name="tab-desktop" value="desktop"
+					><IconDeviceDesktop /></RadioItem
+				>
+			</RadioGroup>
 
 			<RadioGroup padding="px-3 py-1 pt-2">
 				<RadioItem bind:group={$storePreviewCode[props.slug]} name="tab-preview" value="preview"

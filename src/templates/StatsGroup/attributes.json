@@ -1,0 +1,12 @@
+{
+  "title": "Grouped stats",
+  "category": "stats",
+  "author": "imyt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true,
+    "maxWidth": "max-w-screen-lg"
+  }
+}

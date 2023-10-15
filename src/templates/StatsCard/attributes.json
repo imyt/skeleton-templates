@@ -1,0 +1,12 @@
+{
+  "title": "Card with progress",
+  "category": "stats",
+  "author": "imypt",
+  "withColor": true,
+  "responsive": true,
+  "dependencies": [],
+  "canvas": {
+    "center": true,
+    "maxWidth": "max-w-sm"
+  }
+}

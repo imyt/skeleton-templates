@@ -18,6 +18,6 @@
 			<input type="checkbox" class="checkbox" />
 			<span class="ml-2">Remember me</span>
 		</label>
-		<button class="btn variant-filled-primary w-full">Reset Password</button>
+		<button class="btn variant-filled-primary w-full">Login</button>
 	</form>
 </div>

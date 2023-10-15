@@ -30,9 +30,9 @@
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 	{#each mockdata as stat}
-		<div class="card p-6 space-y-1">
-			<div class="flex space-x-5">
-				<ProgressRadial value={stat.progress} stroke={125} class="h-16 w-16" meter={stat.color}>
+		<div class="card p-6">
+			<div class="flex space-x-5 items-center">
+				<ProgressRadial value={stat.progress} stroke={125} meter={stat.color} width="w-20">
 					{#if stat.icon === 'up'}
 						<IconArrowUpRight />
 					{:else}
