@@ -56,14 +56,14 @@ export function getAllComponents(): UiComponent[] {
 		.filter((c) => c) as UiComponent[]
 }
 
-export function buildComponentIndex() {
+export async function buildComponentIndex() {
 	const dataPath = path.join(path.resolve(), './src/lib/data')
 
 	let fileContent = `
 	const components: App.UiComponent[] = ${JSON.stringify(getAllComponents())}
 	export default components
 	`
-	fileContent = prettier.format(fileContent, {
+	fileContent = await prettier.format(fileContent, {
 		semi: false,
 		singleQuote: true,
 		trailingComma: 'none',
