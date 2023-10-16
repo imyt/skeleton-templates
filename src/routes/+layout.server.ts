@@ -10,11 +10,11 @@ export const load: LayoutServerLoad = async ({ cookies }) => {
 		cookies.set('theme', 'skeleton', { path: '/' })
 		theme = 'skeleton'
 	}
-	// Imports theme as a string
-	const modules = import.meta.glob(`../../node_modules/@skeletonlabs/skeleton/themes/*.css`, {
-		as: 'raw'
-	})
-	return {
-		currentTheme: modules[`../../node_modules/@skeletonlabs/skeleton/themes/theme-${theme}.css`]()
-	}
+	// // Imports theme as a string
+	// const modules = import.meta.glob(`../../node_modules/@skeletonlabs/skeleton/themes/*.css`, {
+	// 	as: 'raw'
+	// })
+	// return {
+	// 	currentTheme: modules[`../../node_modules/@skeletonlabs/skeleton/themes/theme-${theme}.css`]()
+	// }
 }

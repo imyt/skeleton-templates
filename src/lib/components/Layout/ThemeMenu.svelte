@@ -16,9 +16,10 @@
 	import IconPalette from 'virtual:icons/tabler/palette'
 	import IconCaretDown from 'virtual:icons/tabler/caret-down'
 	import { storeTheme } from '$lib/stores'
-	import { enhance, type SubmitFunction } from '$app/forms'
+	import { enhance } from '$app/forms'
 	import { browser } from '$app/environment'
 	import type { LayoutServerData } from '../../../routes/$types'
+	import type { SubmitFunction } from '@sveltejs/kit'
 
 	const setTheme: SubmitFunction = () => {
 		return async ({ result, update }) => {

@@ -16,42 +16,27 @@
 			</p>
 			<ul class="list-items">
 				<li>
-					<span
-						><IconCheck
-							alt="bullet point"
-							class="variant-filled-primary rounded-token p-0.5"
-						/></span
-					>
+					<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>
 					<span>
 						<b>TypeScript based</b> – build type safe applications, all components and hooks export types
 					</span>
 				</li>
 				<li>
-					<span
-						><IconCheck
-							alt="bullet point"
-							class="variant-filled-primary rounded-token p-0.5"
-						/></span
-					>
+					<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>
 					<span>
 						<b>Free and open source</b> – all packages have MIT license, you can use Mantine in any project
 					</span>
 				</li>
 				<li>
-					<span
-						><IconCheck
-							alt="bullet point"
-							class="variant-filled-primary rounded-token p-0.5"
-						/></span
-					>
+					<span><IconCheck class="variant-filled-primary rounded-token p-0.5" /></span>
 					<span>
 						<b>No annoying focus ring</b> – focus ring will appear only when user navigates with keyboard
 					</span>
 				</li>
 			</ul>
 			<div class="flex flex-wrap gap-4">
-				<button class="btn md:btn-lg  w-full md:w-fit variant-filled-primary">Get Started</button>
-				<button class="btn md:btn-lg  w-full md:w-fit variant-filled-surface">Source Code</button>
+				<button class="btn md:btn-lg w-full md:w-fit variant-filled-primary">Get Started</button>
+				<button class="btn md:btn-lg w-full md:w-fit variant-filled-surface">Source Code</button>
 			</div>
 		</div>
 
