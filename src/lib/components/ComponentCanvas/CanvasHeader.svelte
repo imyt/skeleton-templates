@@ -33,8 +33,7 @@
 						href={`/component/${props.slug}`}
 						target="_blank"
 						aria-label={`View ${props.attributes.title} component in isolation`}
-						rel="noreferrer"
-						><IconExternalLink alt={`View ${props.attributes.title} component in isolation`} /></a
+						rel="noreferrer"><IconExternalLink /></a
 					>
 				{/if}
 
